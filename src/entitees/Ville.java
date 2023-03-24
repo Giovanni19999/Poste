@@ -1,6 +1,7 @@
 package entitees;
 
 import entitees.enumerations.Continent;
+import java.lang.StringBuilder;
 public class Ville {
 
     private String city;
@@ -24,15 +25,23 @@ public class Ville {
 
     @Override
     public String toString() {
-        return "Ville{" +
-                "city='" + city + '\'' +
-                ", postalCode=" + postalCode +
-                ", region='" + region + '\'' +
-                ", country='" + country + '\'' +
-                ", continent=" + continent +
-                ", population=" + population +
-                ", superficie=" + superficie +
-                '}';
+        StringBuilder builder = new StringBuilder();
+        builder.append("Ville : {");
+        builder.append(city);
+        builder.append(", ");
+        builder.append(postalCode);
+        builder.append(", ");
+        builder.append(region);
+        builder.append(", ");
+        builder.append(country);
+        builder.append(", ");
+        builder.append(continent);
+        builder.append(", ");
+        builder.append(population);
+        builder.append(", ");
+        builder.append(superficie);
+        builder.append("}");
+        return builder.toString();
     }
 
     public String getCity() {
