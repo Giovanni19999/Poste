@@ -4,7 +4,8 @@ public class Pays {
     private String nom;
     private String continent;
     private int nbHab;
-
+  public Pays(){
+  }
     public Pays(String nom, String continent, int nbHab) {
         this.nom = nom;
         this.continent = continent;
