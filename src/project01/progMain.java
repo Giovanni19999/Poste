@@ -28,6 +28,10 @@ public class progMain {
 
 		VehiculeLaPoste vp = new VehiculeLaPoste();
 
+    List<AdressePostale> adressePostales =new ArrayList<>();
+		adressePostales.add(adr);
+		System.out.println(adressePostales);
+
 		//Instance de Personne
 		usePersonne(p1);
 		usePersonne(f1);
