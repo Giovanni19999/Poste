@@ -3,6 +3,9 @@ package project01;
 import entitees.*;
 import mesinterfaces.iFacteur;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class progMain {
 
 	public static void usePersonne(Personne op) {
@@ -24,6 +27,9 @@ public class progMain {
 		Facteur f1 = new Facteur("Germain","christophe",adr);
 		
 		VehiculeLaPoste vp = new VehiculeLaPoste();
+		List<AdressePostale> adressePostales =new ArrayList<>();
+		adressePostales.add(adr);
+		System.out.println(adressePostales);
 				
 		//Instance de Personne
 		usePersonne(p1);
